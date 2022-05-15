@@ -38,3 +38,17 @@
 
 //取消暂存的文件 git reset HEAD 要移除的文件名称 (了解)
 //全部移除git reset HEAD .
+
+//移除文件 (了解) git rm -f 要移除的文件  remove  force强制
+//只移除仓库里面的文件，保留本地的文件 git rm --cached 要移除的文件
+
+//查看提交历史 git log   查看最新两条 git log -2
+
+//回退到指定的版本
+//1.在一行上展示所有的提交历史
+//git log --pretty=oneline
+//2.使用git reset --hard 根据指定的提交ID退回到指定版本
+//git reset --hard <CommitID>
+//3.在旧版本中使用git log --pretty=oneline 查看命令操作的地址
+//4.再次根据最新的提交ID 跳转到最新的版本
+//git reset --hard <CommitID>
