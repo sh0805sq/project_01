@@ -52,3 +52,28 @@
 //3.在旧版本中使用git log --pretty=oneline 查看命令操作的地址
 //4.再次根据最新的提交ID 跳转到最新的版本
 //git reset --hard <CommitID>
+
+
+
+//查看本地工程关联的远程仓库是哪个 git remove -v
+
+
+
+
+// 1. git remote add origin https://github.com/sh0805sq/project_01.git (是用来关联本地仓库和远程仓库的)
+
+//remote 远程的意思
+//add 添加
+//origin 后面的地址仓库的别名
+//远程仓库的地址 https://github.com/sh0805sq/project_01.git
+
+// 2. git branch -M main (把默认的master 分支名称改成了 main)
+
+// 3. git push -u origin main 表示第一次本地仓库朝远程仓库提交的时候 必须这么写
+
+//push 推送
+//-u 表示第一次推送的时候 必须添加-u元素
+//origin 表示要把工程往哪推 这个名字代表的地址就是你要推送的地址
+//main 表示上面那个地址所有的某一点 (房间，分支)
+
+// 4. 后面 修改完代码之后 只需要走 git push 即可
